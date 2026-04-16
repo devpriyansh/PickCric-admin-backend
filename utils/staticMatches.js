@@ -4,7 +4,7 @@ const staticMatches = [
   {
     id: 101,
     league: "IPL 2026",
-    matchDate: "2026-04-15",
+    matchDate: "2026-04-20",
     teamA: { name: "Mumbai Indians", shortName: "MI" },
     teamB: { name: "Chennai Super Kings", shortName: "CSK" },
     status: "Upcoming",
