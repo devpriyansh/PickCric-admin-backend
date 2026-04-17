@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const sequelize = require('./config/database');
 const jackpotRoutes = require('./routes/jackpotRoutes');
-
+const authRoutes = require('./routes/authRoutes');
 const app = express();
 const PORT = process.env.PORT || 5001;
 
@@ -20,6 +20,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api', jackpotRoutes);
+app.use('/api/auth', authRoutes);
 
 // Health check endpoint
 app.get('/', (req, res) => {
